@@ -1,0 +1,177 @@
+.skip {
+    position: absolute;
+    left: 0px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; 
+}
+.skip:focus {
+    position: static;
+    width:auto;
+    height: auto;
+}
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 3px solid #FF9900;
+}
+/* Universal Settings */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #1A1A1A;
+    background-color: #FFFFFF;
+}
+header, nav, main, footer {
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 800px;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2em;
+    color: #0044CC; /* High-contrast color for headers */
+}
+
+/* Navigation */
+/* Default styling for larger screens */
+nav ul {
+    display: flex;            /* Enables Flexbox for horizontal layout */
+    list-style-type: none;    /* Removes bullets from list items */
+    padding: 0;
+    margin: 0;
+    gap: 1em;                 /* Adds space between menu items */
+    justify-content: center;  /* Centers items horizontally */
+}
+
+nav li {
+    display: inline;          /* Keeps items inline on larger screens */
+}
+
+nav a, li {
+    /*text-decoration: none; */
+    padding: 0.5em 0.4em;
+    color: #0044CC;
+    background-color: #E6F2FF;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+nav a:focus {
+    outline: 3px solid #FF9900; /* Adds a visible focus outline */
+}
+
+/* Main Content */
+main section {
+    border-top: 1px solid #CCCCCC;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+main h2 {
+    font-size: 1.75em;
+    color: #0044CC;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.875em;
+    color: #666666;
+    margin-top: 2em;
+}
+table {
+    width: 100%;   
+}
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+th, td {
+    padding: 12px; /*spaces around*/
+    border: 1px solid #1d1414; 
+}
+
+th {
+    background-color: #0044CC; 
+    color: #FFFFFF; 
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff; /* Alternating row colors for readability */
+}
+
+tr:focus-within, tr:hover {
+    background-color: #FFEB99; /* Highlight row on focus or hover */
+}
+/*form styling*/
+.form-group {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column; /*to stack label and input veritcally*/
+}
+label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #0044CC; 
+}
+input[type="text"],
+textarea {
+    padding: 0.5em;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 100%;
+}
+#feedback {
+    height: 170px;
+    resize: none;
+}
+button[type="submit"] {
+    padding: 0.7em 1.2em;
+    background-color: #0044CC;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer; /*what does this do*/
+}
+button[type="submit"]:focus,
+button[type="submit"]:hover {
+    background-color: #003399;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;     
+        align-items: center;        
+        gap: 0.5em;                 
+    }
+
+    nav li {
+        width: 100%;                
+        text-align: center;        
+    }
+
+    nav a {
+        display: block;              
+        padding: 1em;              
+        font-size: 1.1em;          
+    }
+}
+
+
+
