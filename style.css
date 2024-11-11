@@ -36,6 +36,7 @@ header h1 {
 
 /* Navigation */
 /* Default styling for larger screens */
+
 nav ul {
     display: flex;            /* Enables Flexbox for horizontal layout */
     list-style-type: none;    /* Removes bullets from list items */
@@ -45,21 +46,14 @@ nav ul {
     justify-content: center;  /* Centers items horizontally */
 }
 
-nav li {
-    display: inline;          /* Keeps items inline on larger screens */
-}
-
 nav a, li {
     /*text-decoration: none; */
     padding: 0.5em 0.4em;
+    text-decoration: none;
     color: #0044CC;
     background-color: #E6F2FF;
     border-radius: 5px;
     font-size: 1em;
-}
-
-nav a:focus {
-    outline: 3px solid #FF9900; /* Adds a visible focus outline */
 }
 
 /* Main Content */
@@ -77,9 +71,7 @@ main h2 {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
 }
-
 /* Footer */
 footer {
     text-align: center;
@@ -99,7 +91,7 @@ caption {
 
 th, td {
     padding: 12px; /*spaces around*/
-    border: 1px solid #1d1414; 
+    border: 2px solid #1d1414; 
 }
 
 th {
@@ -108,13 +100,6 @@ th {
     font-weight: bold;
 }
 
-tr:nth-child(even) {
-    background-color: #ffffff; /* Alternating row colors for readability */
-}
-
-tr:focus-within, tr:hover {
-    background-color: #FFEB99; /* Highlight row on focus or hover */
-}
 /*form styling*/
 .form-group {
     margin-bottom: 1em;
@@ -152,6 +137,12 @@ button[type="submit"]:focus,
 button[type="submit"]:hover {
     background-color: #003399;
 }
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none; /* Hide by default */
+    margin-top: 0.2em;
+}
 
 /* Media query for small screens */
 @media (max-width: 768px) {
@@ -172,6 +163,10 @@ button[type="submit"]:hover {
         font-size: 1.1em;          
     }
 }
+
+
+
+
 
 
 
