@@ -11,7 +11,7 @@
     width:auto;
     height: auto;
 }
-a:focus, button:focus, input:focus, textarea:focus {
+a:focus, button:focus, input:focus, textarea:focus, th:focus, td:focus {
     outline: 3px solid #FF9900;
 }
 /* Universal Settings */

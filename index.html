@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header" role="banner">
+    <header class="header">
         <a href="#main" class="skip" aria-label="Skip to main content" role="link">Skip to main content</a>
-        <h1>Welcome to EduHub - accessible leanring portal</h1>
+        <h1 tabindex="0">Welcome to EduHub - accessible learning portal</h1>
     </header>
 
     <nav class="nav__item-menu" role="navigation" aria-label="Primary navigation">
@@ -24,15 +24,15 @@
         </ul>
     </nav>
     <!-- tabindex="-1" makes so that the text on maain section is outlined-->
-    <main class="main__content" id="main" role="main" tabindex="-1">
+    <main class="main__content" id="main" tabindex="-1">
         <section aria-labelledby="intro">
-            <h2 id="intro">Explore Programming and Web Development Tutorials</h2>
-            <p>At EduHub, we offer accessible tutorials on topics like HTML, CSS, JavaScript, and SQL. Our mission is to provide everyone with the resources they need to learn effectively.</p>
-            <img src="img/people-coding.jpg" alt="Two people engaging in coding tutorials in front of a laptop">
+            <h2 tabindex="0" id="intro">Explore Programming and Web Development Tutorials</h2>
+            <p tabindex="0">At EduHub, we offer accessible tutorials on topics like HTML, CSS, JavaScript, and SQL. Our mission is to provide everyone with the resources they need to learn effectively.</p>
+            <img tabindex="0" src="img/people-coding.jpg" alt="Two people engaging in coding tutorials in front of a laptop">
         </section>
     </main>
     <footer role="contentinfo">
-        <p>&copy; 2023 EduHub - Empowering Accessible Education</p>
+        <p tabindex="0" >&copy; 2023 EduHub - Empowering Accessible Education</p>
     </footer>
 </body>
 </html>
