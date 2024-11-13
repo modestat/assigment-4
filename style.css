@@ -90,7 +90,7 @@ caption {
 }
 
 th, td {
-    padding: 12px; /*spaces around*/
+    padding: 12px; 
     border: 2px solid #1d1414; 
 }
 
@@ -104,7 +104,7 @@ th {
 .form-group {
     margin-bottom: 1em;
     display: flex;
-    flex-direction: column; /*to stack label and input veritcally*/
+    flex-direction: column; 
 }
 label {
     font-weight: bold;
@@ -131,7 +131,7 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     font-size: 1em;
-    cursor: pointer; /*what does this do*/
+    cursor: pointer; 
 }
 button[type="submit"]:focus,
 button[type="submit"]:hover {
@@ -142,6 +142,11 @@ button[type="submit"]:hover {
     font-size: 0.9em;
     display: none; /* Hide by default */
     margin-top: 0.2em;
+}
+label span {
+    color: #d9534f; 
+    font-style: italic;
+    font-size: 0.9em;
 }
 
 /* Media query for small screens */
